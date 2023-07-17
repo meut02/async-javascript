@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Important Form</title>
+  <style>
+    h2 {
+      text-align: center;
+      color: red;
+    }
+
+    form {
+      background-image: url("C:\Users\utsav\OneDrive\Desktop\vscode\registration page\Screenshot (1).png");
+      background-size: cover;
+      background-position: center;
+      padding: 20px;
+    }
+
+    input[type="submit"] {
+      background-color: blue;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: darkblue;
+    }
+  </style>
+</head>
+<body>
+  <h2>Important Form</h2>
+  <form action="#" onsubmit="onsignup(event)">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br>
+    
+    <label for="number">Number:</label><br>
+    <input type="tel" id="number" name="number" pattern="[0-9]{10}" required><br>
+    
+    <label for="email">Email ID:</label><br>
+    <input type="email" id="email" name="email" required><br>
+    
+    <label for="date">Date:</label><br>
+    <input type="date" id="date" name="date" required><br><br>
+    
+    <input type="submit" value="Submit">
+  </form>
+</body>
+<script>
+    function onsignup(event)
+    {
+        event.prevent.default
+    }
+</script>
+</html>
